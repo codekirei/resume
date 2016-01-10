@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "private": true,
+  "version": "0.1.0",
+  "description": "my resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"nothing to test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codekirei/resume.git"
+  },
+  "author": "Jacob Blakely (code kirei)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codekirei/resume/issues"
+  },
+  "homepage": "https://github.com/codekirei/resume#readme",
+  "dependencies": {
+    "markdown-pdf": "^6.0.0",
+    "phantomjs": "^1.9.19"
+  }
+}
