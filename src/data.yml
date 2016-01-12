@@ -1,65 +1,61 @@
 identity:
-  - name: Jacob Blakely
-  - profession: Software Developer
-  - bio: I make things.
+  name: Jacob Blakely
+  profession: Software Developer
+  bio: I make things.
 contact:
-  - email: jacob@codekirei.com
-  - website: codekirei.com
-  - github: github.com/codekirei
+  email: jacob@codekirei.com
+  website: codekirei.com
+  github: github.com/codekirei
 work:
-  - employer:
-    - name: Self-Employed
-    - position: Software Developer
-    - start: 04-2013
-    - end: Present
-    - location: Salem, OR
-    - summary: Do things
-    - bullets:
+  Self-Employed:
+    position: Software Developer
+    start: 04-2013
+    end: Present
+    location: Salem, OR
+    summary: Do things
+    bullets:
       - Did stuff
       - Did other stuff
       - Yay
-  - employer:
-    - name: Translations.com
-    - position: Client Services
-    - start: 08-2012
-    - end: 04-2013
-    - location: Corvallis, OR
-    - summary: Did things
-    - bullets:
+  Translations.com:
+    position: Client Services
+    start: 08-2012
+    end: 04-2013
+    location: Corvallis, OR
+    summary: Did things
+    bullets:
       - Did stuff
       - Did other stuff
       - Cool
 education:
-  - school:
-    - name: University of Oregon, Clark Honors College
-    - degree: Bachelor of Arts, Business Administration, Economics, Japanese
-    - gpa: 3.81, Cum Laude
-    - start: 09-2007
-    - end: 06-2012
-    - location: Eugene, OR
-    - summary: Did things
-    - bullets:
+  University of Oregon, Clark Honors College:
+    degree: Bachelor of Arts, Business Administration, Economics, Japanese
+    gpa: 3.81, Cum Laude
+    start: 09-2007
+    end: 06-2012
+    location: Eugene, OR
+    summary: Did things
+    bullets:
       - Did stuff
       - Did other stuff
       - Cool
-  - school:
-    - name: Santiam Christian High School
-    - degree: High Scool Diploma
-    - gpa: 4.0, Valedictorian
-    - start: 09-2003
-    - end: 06-2007
-    - location: Adair Village, OR
-    - summary: Did things
-    - bullets:
+  Santiam Christian High School:
+    degree: High Scool Diploma
+    gpa: 4.0, Valedictorian
+    start: 09-2003
+    end: 06-2007
+    location: Adair Village, OR
+    summary: Did things
+    bullets:
       - Did stuff
       - Did other stuff
       - Cool
 skills:
-  - Web:
+  Web:
     - A
     - B
     - C
-  - JavaScript:
+  JavaScript:
     - A
     - B
     - C

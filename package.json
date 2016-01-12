@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/codekirei/resume#readme",
   "dependencies": {
+    "bluebird": "^3.1.1",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "js-yaml": "^3.5.2",
