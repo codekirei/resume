@@ -4,21 +4,32 @@
 // modules
 //----------------------------------------------------------
 // npm
-const gulp = require('gulp')
-const render = require('mithril-node-render')
-
-// local
-const yaml = require('./yaml')
+const m = require('mithril')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-const build = () => {
-  yaml().then(res => console.log(res))
-}
+const map = ar => ob => ar.map(el => el(ob))
+
+const html = data =>
+  m('html'
+    , map(
+      [ head
+      , body
+      ]
+    )(data))
+
+const head = data =>
+  m('head')
+
+const body = data =>
+  m('body'
+    , { class: 'body' }
+    , [ div(data) ])
+
+const div = data => m('div', data.name)
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-module.exports = build
-gulp.task('build', build)
+module.exports = html

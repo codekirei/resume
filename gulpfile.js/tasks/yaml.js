@@ -3,22 +3,25 @@
 //----------------------------------------------------------
 // modules
 //----------------------------------------------------------
+// node
+const fs = require('fs')
+
 // npm
 const gulp = require('gulp')
-const render = require('mithril-node-render')
-
-// local
-const yaml = require('./yaml')
+const parse = require('js-yaml').safeLoad
+const P = require('bluebird')
 
 //----------------------------------------------------------
 // logic
 //----------------------------------------------------------
-const build = () => {
-  yaml().then(res => console.log(res))
-}
+// promise to read path
+const read = path => P.promisify(fs.readFile)(path, 'utf8')
+
+// read and parse yaml
+const yaml = () => read('src/data.yml').then(parse)
 
 //----------------------------------------------------------
 // exports
 //----------------------------------------------------------
-module.exports = build
-gulp.task('build', build)
+module.exports = yaml
+gulp.task('yaml', yaml)
